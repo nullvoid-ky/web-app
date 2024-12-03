@@ -1,0 +1,187 @@
+/* Sukhumvit Set - Bold */
+@font-face {
+    font-family: 'Sukhumvit Set';
+    src: url('../fonts/SukhumvitSet-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Sukhumvit Set - Light */
+@font-face {
+    font-family: 'Sukhumvit Set';
+    src: url('../fonts/SukhumvitSet-Light.ttf') format('truetype');
+    font-weight: 300; /* Light weight */
+    font-style: normal;
+}
+
+/* Sukhumvit Set - Medium */
+@font-face {
+    font-family: 'Sukhumvit Set';
+    src: url('../fonts/SukhumvitSet-Medium.ttf') format('truetype');
+    font-weight: 500; /* Medium weight */
+    font-style: normal;
+}
+/* Sukhumvit Set - SemiBold */
+@font-face {
+    font-family: 'Sukhumvit Set';
+    src: url('../fonts/SukhumvitSet-SemiBold.ttf') format('truetype');
+    font-weight: 600; /* SemiBold weight */
+    font-style: normal;
+}
+/* Sukhumvit Set - Text */
+@font-face {
+    font-family: 'Sukhumvit Set';
+    src: url('../fonts/SukhumvitSet-Text.ttf') format('truetype');
+    font-weight: normal; /* Regular weight */
+    font-style: normal;
+}
+/* Sukhumvit Set - Thin */
+@font-face {
+    font-family: 'Sukhumvit Set';
+    src: url('../fonts/SukhumvitSet-Thin.ttf') format('truetype');
+    font-weight: 100; /* Thin weight */
+    font-style: normal;
+}
+/* Applying the font */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Sukhumvit Set', sans-serif; 
+}
+
+.topic{
+    font-size: 3.5vw;
+}
+.card-list{
+    margin: 2em 0;
+}
+
+.card img{
+    border-radius: 4px;
+}
+
+.card {
+    max-width: 200px;
+    min-width: 84px;
+    width: 10vw;
+}
+.contents{
+    height: 100vh;
+    width: 100vw;
+    background-color: #141414;
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+}
+
+.box{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    font-family: 'Sukhumvit Set', sans-serif; 
+    background-color: transparent;
+    border: 1px solid grey;
+    color: grey;
+    cursor: pointer;
+    display: block;
+    font-size: 1.2vw;
+    letter-spacing: 2px;
+    margin: 2em 0 1em;
+    padding: .5em 1.5em;
+    text-decoration: none;
+    height: fit-content;
+}
+
+ul{
+    list-style-type: disc;
+    
+}
+
+li{
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin: 0 1vw;
+}
+
+.avatar-wrapper:hover *{
+    transition: ease-in-out 0.1s;
+    color: white;
+}
+.avatar-wrapper{
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 10vw;
+    max-height: 200px;
+    max-width: 200px;
+    min-height: 84px;
+    min-width: 84px;
+    position: relative;
+    text-decoration: none;
+    width: 10vw;
+}
+.profile-icon {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    text-decoration: none;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.avatar-wrapper span{
+    font-family: 'Sukhumvit Set', sans-serif; 
+    color: grey;
+    display: block;
+    font-size: 1.3vw;
+    line-height: 1.2em;
+    margin: .6em 0;
+    min-height: 1.8em;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Inherits color from the parent, or specify a desired color */
+}
+
+a:visited {
+    text-decoration: none; /* Ensures visited links don't have an underline */
+    color: inherit; /* Keeps visited link color consistent */
+}
+
+a:hover, a:focus {
+    transition: ease-in-out 0.1s;
+    color: white;
+    border-color: white;
+}
+
+.profile-icon::after {
+    border: .3em solid transparent;
+    border-radius: 4px;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.profile-icon:hover::after {
+    border-color: white;
+}
